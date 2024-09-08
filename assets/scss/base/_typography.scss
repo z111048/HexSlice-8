@@ -1,0 +1,109 @@
+// 目前用於小尺寸 標題下方p文字
+.f-sm-inter {
+  @media (max-width: 992px) {
+    font-family: 'Inter', sans-serif;
+    font-size: $h6-font-size; // 20
+    font-weight: $font-weight-medium; // 500
+    line-height: $line-height-base; // 1.5
+    letter-spacing: normal;
+  }
+}
+
+// 全尺寸
+.f-inter {
+  font-family: 'Inter', sans-serif;
+  font-size: $h6-font-size; // 20
+  font-weight: $font-weight-medium; // 500
+  line-height: $line-height-base; // 1.5
+  letter-spacing: normal;
+}
+
+// letter-spacing 大小尺寸一樣
+.f-custom-letter-spacing {
+  letter-spacing: 0.02em;
+}
+
+//letter-spacing 大尺寸0.02 小尺寸normal
+.f-custom-lg-letter-spacing {
+  letter-spacing: 0.02em;
+
+  @media (max-width: 992px) {
+    letter-spacing: normal;
+  }
+}
+
+// 移除letter-spacing
+.f-custom-letter-spacing-n {
+  letter-spacing: normal;
+}
+
+// 目前用於xxx門課程 想學什麼區塊
+.f-custom-letter-spacing-sm {
+  letter-spacing: -0.01em;
+}
+
+// fw 大尺寸600 小尺寸700
+.f-custom-title-fw {
+  font-weight: 600;
+
+  @media (max-width: 992px) {
+    font-weight: 700;
+  }
+}
+
+// fw 大尺寸400 小尺寸500
+.f-custom-body-fw {
+  font-weight: 400;
+
+  @media (max-width: 992px) {
+    font-weight: 500;
+  }
+}
+
+// line-height 大尺寸1.2 小尺寸1.5
+.f-custom-title-lh {
+  line-height: 1.2;
+
+  @media (max-width: 992px) {
+    line-height: 1.5;
+  }
+}
+
+.f-lh-base {
+  line-height: $line-height-base;
+}
+
+/*Body 1 16px R*/
+// p標籤預設值400/1.5h
+p {
+  // line-height: 1.5;
+  letter-spacing: 0.02em; //0903更新-設為預設值
+}
+
+// Body 2 14px R
+.fs-small {
+  font-size: $font-size-sm; // 14
+}
+
+// 大尺寸16px 小尺寸14px
+.fs-lg-base {
+  @media (min-width: 992px) {
+    font-size: $font-size-base;
+  }
+}
+.fs-sm-small {
+  @media (max-width: 991px) {
+    font-size: $font-size-sm;
+  }
+}
+.fs-lg-small {
+  @media (min-width: 992px) {
+    font-size: $font-size-sm;
+  }
+}
+
+.fs-sm-xs {
+  @media (max-width: 991px) {
+    font-size: 12px;
+  }
+}

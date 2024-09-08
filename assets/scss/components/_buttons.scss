@@ -1,0 +1,155 @@
+// btn預設值400/1.5h/
+.btn {
+  letter-spacing: 0.02em;
+}
+
+// 搭配fs-small
+.btn-tag-sm {
+  padding: 4px 12px;
+  border: 0;
+  border-radius: 100px;
+  background-color: $neutral-200;
+  color: $neutral-400;
+}
+// 搭配fs-small
+.btn-tag-lg {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 100px;
+  background-color: $neutral-200;
+  color: $neutral-400;
+}
+
+// 搭配fs-subtitle
+.btn-tag-fs-subtitle {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 100px;
+  background-color: $neutral-200;
+  color: $neutral-400;
+}
+
+//想學什麼 btn外框
+.btn-category {
+  width: 306px;
+  box-shadow: 0px 25px 50px -12px #0000001f;
+
+  @media (max-width: 992px) {
+    width: 272px;
+  }
+}
+
+// .btn-primary {
+//     color: #fff;
+//     background-color: #0068FF;
+//     border-color: #0068FF;
+
+//     &:hover {
+//         color: #fff;
+//         background-color: $primary-dark;
+//         border-color: $primary-dark;
+//     }
+
+//     &:active {
+//         color: #fff;
+//         background-color: $primary-dark;
+//         border-color: $primary-dark;
+//     }
+// }
+
+// 若套用btn 無法解決active樣式問題
+// 目前只使用在course.html頁面
+.btn-initial {
+  border: 1px solid $neutral-200;
+  background-color: $white;
+  color: $neutral-400;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+.btn-initial.active {
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: $white;
+
+  &:hover {
+    background-color: $primary-dark;
+    color: $white;
+  }
+}
+.btn-initial.disable {
+  background-color: $neutral-200;
+  color: $neutral-300;
+}
+
+// .btn{
+//     &:hover {
+//         background-color: $primary;
+//         color: $white;
+//     }
+
+//     &:active {
+//         background-color: $primary-dark;
+//         color: $white;
+//     }
+// }
+// .btn.active{
+//     background-color: $primary;
+//     color: $white;
+
+//     &:hover {
+//         background-color: $primary-dark;
+//         color: $white;
+//     }
+//     &:active {
+//         background-color: $primary-dark;
+//         color: $white;
+//     }
+// }
+
+.btn-page {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid $copy;
+  background-color: $white;
+  color: $neutral-400;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $primary-dark;
+    color: $white;
+  }
+
+  @media (max-width: 992px) {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+  }
+}
+.btn-page.active {
+  background-color: $primary;
+  color: $white;
+
+  &:hover {
+    background-color: $primary-dark;
+    color: $white;
+  }
+  &:active {
+    background-color: $primary-dark;
+    color: $white;
+  }
+}
+.btn-page.disable {
+  background-color: $neutral-200;
+  color: $neutral-300;
+}

@@ -12,6 +12,12 @@
 @import 'bootstrap/scss/utilities/api';
 
 @import './base/base';
+@import './base/typography';
+
+@import './components/cards';
+@import './components/buttons';
+@import './components/badges';
+@import './components/carousel';
 
 @import './layout/header';
 @import './layout/footer';
